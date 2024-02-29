@@ -9,12 +9,13 @@ import CreateArea from './components/CreateArea';
 function App() {
   const [notes, setNotes] = useState([]);
 
+  //Adding function
   function addNote(newNote) {
     setNotes(prevNotes => {
       return [...prevNotes, newNote];
     });
   }
-
+//Deleting Function
   function deleteNote(id) {
     console.log("Delete is triggered")
     setNotes(prevNotes => {
