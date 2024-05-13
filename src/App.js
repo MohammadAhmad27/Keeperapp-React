@@ -15,7 +15,7 @@ function App() {
       return [...prevNotes, newNote];
     });
   }
-//Deleting Function
+  //Deleting Function
   function deleteNote(id) {
     console.log("Delete is triggered")
     setNotes(prevNotes => {

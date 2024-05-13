@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-function CreateArea(props) {
+function CreateArea({ onAdd }) {
 
   const [note, setNote] = useState(() => {
     // Check if there are notes stored in localStorage
@@ -36,7 +36,7 @@ function CreateArea(props) {
 
   function submitNote(event) {
     event.preventDefault();
-    props.onAdd(note);
+    onAdd(note);
     setNote({ title: "", content: "" });
   }
 
